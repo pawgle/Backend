@@ -18,7 +18,12 @@ public class LikeReceiver {
 
     //호감 보낸 사람
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "sender_id")
+    private User sender;
+    
+    // 호감 받는 사람
+    @ManyToOne
+    @JoinColumn(name = "receiver_id")
     private User receiver;
 
 }
