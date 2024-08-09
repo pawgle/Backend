@@ -5,13 +5,14 @@ import com.example.pawgle.pet.component.PetComponent;
 import com.example.pawgle.pet.image.PetImage;
 import com.example.pawgle.user.image.UserImage;
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Pet {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

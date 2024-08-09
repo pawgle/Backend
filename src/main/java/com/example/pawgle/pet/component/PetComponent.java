@@ -3,11 +3,12 @@ package com.example.pawgle.pet.component;
 import com.example.pawgle.common.Question;
 import com.example.pawgle.pet.Pet;
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 @Entity
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class PetComponent {
 
     @Id

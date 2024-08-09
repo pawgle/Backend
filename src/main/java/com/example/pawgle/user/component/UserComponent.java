@@ -3,10 +3,11 @@ package com.example.pawgle.user.component;
 import com.example.pawgle.common.Question;
 import com.example.pawgle.user.User;
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 @Entity
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class UserComponent {
 
     @Id

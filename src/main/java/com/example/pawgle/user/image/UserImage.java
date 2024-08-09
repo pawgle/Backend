@@ -2,10 +2,11 @@ package com.example.pawgle.user.image;
 
 import com.example.pawgle.user.User;
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 @Entity
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class UserImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
