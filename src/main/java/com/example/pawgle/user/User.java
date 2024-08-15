@@ -1,7 +1,7 @@
 package com.example.pawgle.user;
 
 import com.example.pawgle.common.Gender;
-import com.example.pawgle.like.Like;
+import com.example.pawgle.like.UserLike;
 import com.example.pawgle.pet.Pet;
 import com.example.pawgle.user.component.UserComponent;
 import com.example.pawgle.user.image.UserImage;
@@ -52,9 +52,9 @@ public class User {
     private List<BlackUser> blackUsers = new ArrayList<>();
 
     @OneToMany(mappedBy = "receiver", fetch = FetchType.LAZY)
-    private List<Like> likeReceivers = new ArrayList<>();
+    private List<UserLike> userLikeReceivers = new ArrayList<>();
 
     @OneToMany(mappedBy = "sender", fetch = FetchType.LAZY)
-    private List<Like> likeSenders = new ArrayList<>();
+    private List<UserLike> userLikeSenders = new ArrayList<>();
 }
 

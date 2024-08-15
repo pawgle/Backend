@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Like {
+public class UserLike {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
